@@ -36,14 +36,14 @@ namespace _1__Requêtes_sur_des_listes_d_objets___NET__
 
             // By Query Expression .
 
-            var Berger_Australian = from brg 
+            var Berger_Australian = from ba 
                                     in Dogs 
-                                    where brg.Race.Contains("Berger Australian")
-                                    orderby brg.Name descending
-                                    select brg;
+                                    where ba.Race.Contains("Berger Australian")
+                                    orderby ba.Name descending
+                                    select ba;
 
-            foreach (var brg in Berger_Australian)
-                Console.WriteLine(brg.Name);
+            foreach (var ba in Berger_Australian)
+                Console.WriteLine(ba.Name);
 
             Console.WriteLine("----------------------------------------------------------------------------");
 
